@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -14,4 +14,7 @@ function draw() {
   rectMode(RADIUS);
   fill(200);
   rect(mouseX, mouseY, 40, 40);
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
